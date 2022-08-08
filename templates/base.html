@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<meta name="author" content="mattgriffindev">
+	<meta name="description" content="Online book review site">
+	<meta name="keywords" content="Book, Review">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 
-    <title>Hello Flask</title>
+	<script src="https://kit.fontawesome.com/8418939052.js" crossorigin="anonymous"></script>
+
+    <title>Treat Yo Shelf</title>
 </head>
 <body>
 
+	<!--navbar-->
     <header id="navbar">
 		<nav class="navbar navbar-expand-lg">
 			<div class="container-fluid">
@@ -71,9 +78,49 @@
 	</header>
 	<!--/navbar-->
 
-    {% block content %}
+    {% block header %}
     {% endblock %}
 
+	<!--bottom-->
+	<section id="bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-3 bottom-col">
+					<ul>
+						<li class="bottom-heading">Treat Yo Shelf</li>
+						<li>About us</li>
+						<li>Reviews</li>
+						<li>Contact us</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-3 bottom-col">
+					<ul>
+						<li class="bottom-heading">Popular genres</li>
+						<li>Romance</li>
+						<li>Mystery</li>
+						<li>Fantasy & Science Fiction</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-3 bottom-col">
+					<ul>
+						<li class="bottom-heading">Small print</li>
+						<li>T&Cs</li>
+						<li>Privacy policy</li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-3 bottom-col">
+					<ul>
+						<li class="bottom-heading">Contact Us</li>
+						<li>Call <strong>0330 123 4567</strong></li>
+						<li>Email <strong><a href="mailto:matt.griffin@live.co.uk">info@treat-yo-shelf.co.uk</a></strong>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/bottom-->
+	
     <!--footer-->
 	<footer id="footer">
 		<div class="container">
