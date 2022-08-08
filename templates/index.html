@@ -1,6 +1,30 @@
 {% extends "base.html" %}
 {% block header %}
-    <h1>Home Page</h1>
+    <!--hero-->
+	<section id="hero">
+		<div class="container-fluid">
+			<div class="row d-flex align-items-center">
+				<div class="col-12 col-md-6 col-lg-4 p-0 hero-left">
+					<div class="hero-image-container">
+						<div class="hero-image--left"></div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 hero-center">
+					<p class="display-6"><span class="highlight">Read it, review it and something else about booky wooks goes here!</span></p>
+					<div class="d-sm-block d-lg-none">
+						<a class="btn-main-reverse btn btn" href="login.html" role="button">Login</a>
+						<a class="btn-main btn" href="register.html" role="button">Register</a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-4 p-0 d-none d-lg-block hero-right">
+					<div class="hero-image-container">
+						<div class="hero-image--right"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/hero-->
 {% endblock %}
 
 {% block footer %}
