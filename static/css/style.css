@@ -74,19 +74,13 @@ html {
 
 .hero-image--left {
 	height: 100%;
-	background: url("/assets/image/hero-left.jpg") no-repeat center center;
-	background-size: contain;
-}
-
-.hero-image--center {
-	height: 100%;
-	background: url("/assets/image/hero-bubble.jpg") no-repeat center center;
+	background: url("/static/assets/hero-left.jpg") no-repeat center center;
 	background-size: contain;
 }
 
 .hero-image--right {
 	height: 100%;
-	background: url("/assets/image/hero-right.jpg") no-repeat center center;
+	background: url("/static/assets/hero-right.jpg") no-repeat center center;
 	background-size: contain;
 }
 
