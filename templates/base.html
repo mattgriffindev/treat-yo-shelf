@@ -60,7 +60,7 @@
 							<a class="nav-link" href="{{ url_for('about') }}">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="{{ url_for('index') }}">Contact Us</a>
+							<a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
 						</li>
 					</ul>
 					<span class="navbar-text d-none d-lg-block ms-2">
@@ -83,9 +83,12 @@
 				<div class="col-12 col-md-3 bottom-col">
 					<ul>
 						<li class="bottom-heading">Treat Yo Shelf</li>
-						<li>About us</li>
-						<li>Reviews</li>
-						<li>Contact us</li>
+						<li>
+							<a href="{{ url_for('about') }}">About Us</a>
+						</li>
+						<li>
+							<a href="{{ url_for('contact') }}">Contact Us</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-3 bottom-col">
