@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=M+PLUS+1+Code&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+:root {
+	--brand-color: #FDC807;
+	--dark-color: #2A444D;
+	--mid-color: #385963;
+	--light-color: #FFF;
+	--heart: #ffb3be;
+
+	--font1: 'Paytone One';
+	--font2: 'Lobster', cursive;
+	--signature: 'M PLUS 1 Code', cursive;
+	  }
+
+html {
+	font-size: 16px;
+}
+
+/*-----------------------------------------------------------------header-*/
+
+.navbar {
+	background-color: var(--dark-color);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: var(--brand-color);
+	font-family: var(--font2);
+	font-size: 2rem;
+}
+
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28253,	200,	7, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link,
+.nav-link:hover {
+	margin: auto 0.5rem;
+	color: var(--brand-color);
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.header-buttons {
+	position: absolute;
+	right: 1rem;
+}
+
+/*-----------------------------------------------------------------footer-*/
+
+#footer {
+	display: flex;
+	align-items: center;
+	color: var(--light-color);
+	background: var(--dark-color);
+}
+
+#footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#footer p {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.footer-left,
+.footer-right {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.footer-left {
+	display: flex;
+  align-items: center;
+}
+
+.social-media-icon {
+	margin-right: 1.5rem;
+	color: inherit;
+	font-size: 1.25rem;
+}
+
+.signature {
+	font-family: var(--signature);
+}
+
+.hvr-pulse:hover {
+	color: var(--heart);
+}
+
+/*-------------------------------------------------------------------misc-*/
+
+.btn-main,
+.btn-main:hover {
+	color: var(--dark-color);
+	font-weight: 500;
+	background: var(--brand-color);
+}
+
+.btn-main-reverse,
+.btn-main-reverse:hover {
+	margin-right: 0.5rem;
+	color: var(--brand-color);
+	font-weight: 500;
+	background: var(--dark-color);	
+}
