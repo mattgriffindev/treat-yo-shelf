@@ -1,6 +1,35 @@
 {% extends "base.html" %}
 {% block header %}
-    <h1>Register</h1>
+    <!--register-->
+	<section id="register" class="my-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-3 p-0 border border-primary">
+					<div class="register-image-container">
+						<div class="register-image"></div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 register-col">
+					<h2 class="login-register">Register</h2>
+					<p>* Required</p>
+					<form>
+						<label for="user-name" class="form-label">User name (at least 4 characters) *</label>
+						<input type="text" class="form-control" id="user-name" minlength="4" required>
+						<label for="first-name" class="form-label">First name *</label>
+						<input type="text" class="form-control" id="first-name" required>
+						<label for="email-address" class="form-label">Email address *</label>
+						<input type="email" class="form-control" id="email-address" required>
+						<label for="password" class="form-label">Choose a password (at least 8 characters) *</label>
+						<input type="password" class="form-control" id="password" minlength="8" required>
+						<p>By clicking register, I confirm I am over 16 and I agree to FutureLearn's Terms & Conditions and Privacy
+							Policy, and I agree to abide by the Code of Conduct</p>
+						<button type="submit" class="btn btn-main" aria-label="Register">Register</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/register-->
 {% endblock %}
 
 {% block footer %}

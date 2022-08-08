@@ -1,6 +1,32 @@
 {% extends "base.html" %}
 {% block header %}
-    <h1>Login</h1>
+    <!--login-->
+	<section id="login" class="my-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-3 p-0 border border-primary">
+					<div class="login-image-container">
+						<div class="login-image"></div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 login-col">
+					<h2 class="login-register">Login</h2>
+					<p>* Required</p>
+					<form>
+						<label for="user-name" class="form-label">User name (at least 4 characters) *</label>
+						<input type="text" class="form-control" id="user-name" minlength="4" required>
+						<label for="email-address" class="form-label">Email address *</label>
+						<input type="email" class="form-control" id="email-address" required>
+						<label for="password" class="form-label">Choose a password (at least 8 characters) *</label>
+						<input type="password" class="form-control" id="password" minlength="8" required>
+						<p>Forgot password?</p>
+						<button type="submit" class="btn btn-main" aria-label="Login">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/login-->
 {% endblock %}
 
 {% block footer %}
