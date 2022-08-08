@@ -13,14 +13,22 @@
 					<h2 class="login-register">Register</h2>
 					<p>* Required</p>
 					<form>
-						<label for="user-name" class="form-label">User name (at least 4 characters) *</label>
-						<input type="text" class="form-control" id="user-name" minlength="4" required>
-						<label for="first-name" class="form-label">First name *</label>
-						<input type="text" class="form-control" id="first-name" required>
-						<label for="email-address" class="form-label">Email address *</label>
-						<input type="email" class="form-control" id="email-address" required>
-						<label for="password" class="form-label">Choose a password (at least 8 characters) *</label>
-						<input type="password" class="form-control" id="password" minlength="8" required>
+						<div class="mb-3">
+                            <input type="text" class="form-control" id="user-name"
+                                placeholder="User name (at least 4 characters)*" minlength="4" required>
+                        </div>
+						<div class="mb-3">
+                            <input type="text" class="form-control" id="first-name"
+                                placeholder="First name*" minlength="2" required>
+                        </div>
+						<div class="mb-3">
+                            <input type="email" class="form-control" id="email-address"
+                                placeholder="Email address*" required>
+                        </div>
+						<div class="mb-3">
+                            <input type="email" class="form-control" id="password"
+                                placeholder="Password (at least 8 characters)*" minlength="8" required>
+                        </div>
 						<p>By clicking register, I confirm I am over 16 and I agree to FutureLearn's Terms & Conditions and Privacy
 							Policy, and I agree to abide by the Code of Conduct</p>
 						<button type="submit" class="btn btn-main" aria-label="Register">Register</button>
