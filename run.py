@@ -1,10 +1,11 @@
 import os
 from flask import Flask, render_template, request, flash
 if os.path.exists("env.py"):
-    import env 
+    import env
 
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY")
 
 
 @app.route("/")
@@ -20,7 +21,8 @@ def about():
 @app.route("/contact", methods=["GET", "POST"])
 def contact():
     if request.method == "POST":
-        print(request.form)
+        flash("Thanks, {} we have recieved your message!".format(
+            request.form.get("form-name")))
     return render_template("contact.html")
 
 
