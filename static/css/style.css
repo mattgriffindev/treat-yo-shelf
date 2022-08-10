@@ -65,15 +65,14 @@ html {
 	background-color: white;
 }
 
-.hero-left,
+/* .hero-left,
 .hero-right {
 	border: 1px solid hotpink;
-}
+} */
 
 .hero-image-container {
 	height: 28rem;
 	width: auto;
-	border: 1px solid black;
 }
 
 .hero-image--left {
@@ -98,14 +97,13 @@ html {
 
 /*---------------------------------------------------------------features-*/
 
-.features {
+/* .features {
 	border: 1px solid orange;
-}
+} */
 
 .features-image-container {
 	height: 400px;
 	width: auto;
-	border: 1px solid pink;
 }
 
 .features-image--reviews {
@@ -127,19 +125,12 @@ html {
 	font-size: 1.75rem;
 }
 
-/* .login-register-active {
-	text-decoration: none;
-  box-shadow: inset -0.2em -0.2em 1em var(--brand-color);
-} */
-
 .register-col {
 	min-height: 6.25rem;
-	border: 1px solid hotpink;
 }
 
 .register-image-container {
 	height: 50%;
-	border: 1px solid green;
 }
 
 .register-image {
@@ -152,12 +143,10 @@ html {
 
 .login-col {
 	min-height: 6.25rem;
-	border: 1px solid hotpink;
 }
 
 .login-image-container {
 	height: 100%;
-	border: 1px solid green;
 }
 
 .login-image {
@@ -253,7 +242,7 @@ html {
 
 .footer-left {
 	display: flex;
-  align-items: center;
+  	align-items: center;
 }
 
 .social-media-icon {
