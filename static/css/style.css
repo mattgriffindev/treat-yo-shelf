@@ -95,6 +95,19 @@ html {
 	background-color: var(--brand-color);
 }
 
+/*------------------------------------------------------------home-search-*/
+
+#home-search {
+	height: 8rem;
+	display: flex;
+	align-items: center;
+	background-color: #DCDCDD;
+}
+
+.home-search-input {
+	width: 25rem;
+}
+
 /*---------------------------------------------------------------features-*/
 
 /* .features {
