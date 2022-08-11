@@ -46,6 +46,11 @@ def privacy():
     return render_template("privacy.html")
 
 
+@app.route("/review")
+def review():
+    return render_template("review.html")
+
+
 if __name__ == "__main__":
     app.run(
         host=os.environ.get("IP", "0.0.0.0"),
