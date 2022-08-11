@@ -195,7 +195,8 @@ html {
 }
 
 .fa-phone-alt,
-.fa-envelope {
+.fa-envelope,
+.fa-map-marker-alt {
 	color: var(--brand-color);
 }
 
