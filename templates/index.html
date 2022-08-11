@@ -1,61 +1,81 @@
 {% extends "base.html" %}
 {% block header %}
-    <!--hero-->
-	<section id="hero">
-		<div class="container-fluid">
-			<div class="row d-flex align-items-center">
-				<div class="col-12 col-md-6 col-lg-4 p-0 hero-left">
-					<div class="hero-image-container">
-						<div class="hero-image--left"></div>
-					</div>
+<!--hero-->
+<section id="hero">
+	<div class="container-fluid">
+		<div class="row d-flex align-items-center">
+			<div class="col-12 col-md-6 col-lg-4 p-0 hero-left">
+				<div class="hero-image-container">
+					<div class="hero-image--left"></div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-4 hero-center">
-					<p class="display-6"><span class="highlight">Read it, review it and something else about booky wooks goes here!</span></p>
-					<div class="d-sm-block d-lg-none">
-						<a class="btn-main-reverse btn btn" href="{{ url_for('login') }}" role="button">Login</a>
-						<a class="btn-main btn" href="{{ url_for('register') }}" role="button">Register</a>
-					</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-4 hero-center">
+				<p class="display-6"><span class="highlight">Read it, review it and something else about booky wooks
+						goes here!</span></p>
+				<div class="d-sm-block d-lg-none">
+					<a class="btn-main-reverse btn btn" href="{{ url_for('login') }}" role="button">Login</a>
+					<a class="btn-main btn" href="{{ url_for('register') }}" role="button">Register</a>
 				</div>
-				<div class="col-12 col-lg-4 p-0 d-none d-lg-block hero-right">
-					<div class="hero-image-container">
-						<div class="hero-image--right"></div>
-					</div>
+			</div>
+			<div class="col-12 col-lg-4 p-0 d-none d-lg-block hero-right">
+				<div class="hero-image-container">
+					<div class="hero-image--right"></div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--/hero-->
+	</div>
+</section>
+<!--/hero-->
 
-     <!--/features-->
-    <section id="features">
-		<div class="container">
-			<div class="row row-cols-2 d-flex align-items-center">
-				<div class="col-12 col-md-6 p-4 features order-1">
-					<h3>Honest reviews</h3>
-					<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia enim ab eius culpa aut doloribus
-						quos reprehenderit fugit corrupti, sit hic voluptate voluptatem dolor sapiente quidem! Fuga, amet incidunt.
-					</h6>
-				</div>
-				<div class="col-12 col-md-6 features order-2">
-					<div class="features-image-container">
-						<div class="features-image--reviews"></div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 features order-4 order-md-3">
-					<div class="features-image-container">
-						<div class="features-image--search"></div>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 p-4 features order-3 order-md-4">
-					<h3>Search by title, author, or genre</h3>
-					<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia enim ab eius culpa aut doloribus
-						quos reprehenderit fugit corrupti, sit hic voluptate voluptatem dolor sapiente quidem! Fuga, amet incidunt.
-					</h6>
-				</div>
+<!--home-search-->
+<section id="home-search">
+	<div class="container">
+		<div class="row">
+			<h4>Search for a review</h4>
+			<div class="input-group mt-2 home-search-input">
+				<input type="text" class="form-control" placeholder="Search" aria-label="Search"
+					aria-describedby="button-addon2">
+				<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
 			</div>
 		</div>
-	</section>
-    <!--/features-->
+	</div>
+</section>
+<!--/home-search-->
+
+<!--/features-->
+<section id="features">
+	<div class="container">
+		<div class="row row-cols-2 d-flex align-items-center">
+			<div class="col-12 col-md-6 p-4 features order-1">
+				<h3>Honest reviews</h3>
+				<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia enim ab eius culpa aut
+					doloribus
+					quos reprehenderit fugit corrupti, sit hic voluptate voluptatem dolor sapiente quidem! Fuga, amet
+					incidunt.
+				</h6>
+			</div>
+			<div class="col-12 col-md-6 features order-2">
+				<div class="features-image-container">
+					<div class="features-image--reviews"></div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 features order-4 order-md-3">
+				<div class="features-image-container">
+					<div class="features-image--search"></div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 p-4 features order-3 order-md-4">
+				<h3>Search by title, author, or genre</h3>
+				<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla mollitia enim ab eius culpa aut
+					doloribus
+					quos reprehenderit fugit corrupti, sit hic voluptate voluptatem dolor sapiente quidem! Fuga, amet
+					incidunt.
+				</h6>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/features-->
 {% endblock %}
 
 {% block footer %}
